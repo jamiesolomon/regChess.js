@@ -11,6 +11,7 @@
     "test": "jest",
     "lint": "eslint src/ --ext .ts",
     "build": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json",
+    "postinstall": "npm run build",
     "clean": "rm -rf ./dist"
   },
   "repository": {
